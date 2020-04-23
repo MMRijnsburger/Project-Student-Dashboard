@@ -1,23 +1,22 @@
 import React from 'react';
 
-class InputSelect extends React.Component {
-    constructor() {
-        super()
-        this.state = {}
+const InputSelect = (props) => {
+    const handleSelectChange = (event) => {
+        // console.log(event.target.checked)
+        // console.log(props.selectName)
+        props.selectChange(props.selectName, event.target.checked)
     }
-
-    handleSelectChange(event) {
-        console.log(event.target.value)
-    }
-
-    render() {
-        return (
+    return (
+        <label>
             <input
                 type="checkbox"
-                onChange={this.handleSelectChange}
-            ></input>
-        )
-    }
+                onClick={handleSelectChange}
+                defaultChecked
+            >
+            </input>
+            {props.selectText}
+        </label>
+    )
 }
 
 export default InputSelect;
