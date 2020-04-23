@@ -76,7 +76,7 @@ class Container extends React.Component {
                 const averageFun = this.calculateAverageFun(studentData, studentItem.assignment)
                 averageStudentData.push({
                     id: filterItemId++,
-                    name: studentItem.name,
+                    name: 'average',
                     assignment: studentItem.assignment,
                     difficult: averageDifficult,
                     fun: averageFun
