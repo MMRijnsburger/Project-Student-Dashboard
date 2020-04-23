@@ -1,14 +1,68 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+/* App Header styling */
 
 .App-header {
-  background-color: #282c34;
+  background-color: #456B96;
+  font-family: 'Lato', sans-serif;
   min-height: 20vh;
   display: flex;
   flex-direction: column;
+  text-align: center;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(25px + 2vmin);
   color: white;
+}
+
+/* Navigation styling */
+
+.navigation ul {
+  list-style-type: none;
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #DCE5EF;
+}
+
+.navigation li {
+  float: left;
+}
+
+.navigation li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navigation li a:hover {
+  background-color: #456B96;
+}
+
+/* ChartComponent styling */
+
+.ChartComponent {
+  font-family: 'Lato', sans-serif;
+  padding: 15px;
+}
+
+/* StudentPage styling */
+
+.StudentPage {
+  font-family: 'Lato', sans-serif;
+}
+
+h1 {
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+}
+
+/* SelectStudents styling */
+
+.SelectStudents {
+  font-family: 'Lato', sans-serif;
+  padding: 15px;
 }
