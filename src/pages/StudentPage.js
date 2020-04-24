@@ -16,7 +16,7 @@ class StudentPage extends React.Component {
         })
         return (
             <div className="StudentPage">
-                <h1>Students</h1>
+                <h1>Student: {this.state.studentName}</h1>
                 <ChartComponent
                     studentData={studentData}
                 />
