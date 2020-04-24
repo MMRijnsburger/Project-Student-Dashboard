@@ -25,6 +25,10 @@ class GraphComponent extends React.Component {
                         style={{ tickLabels: { fontSize: 10 } }}
                     />
                     <VictoryLine
+                        style={{
+                            data: { stroke: "#3F6C8E" },
+                            parent: { border: "1px solid #ccc" }
+                        }}
                         data={this.props.studentData}
                         x="assignment"
                         y="difficult"
