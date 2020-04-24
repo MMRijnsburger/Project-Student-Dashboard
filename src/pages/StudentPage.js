@@ -61,6 +61,8 @@ class StudentPage extends React.Component {
         const studentData = this.props.studentData.filter(item => {
             return item.name === this.state.studentName
         })
+        const averageDataStudent = this.calculateAverageForOneStudent(studentData)
+        const averageDataAll = this.calculateAverageForAllStudents(this.props.studentData)
         return (
             <div className="StudentPage">
                 <h1>Student: {this.state.studentName}</h1>
@@ -68,7 +70,8 @@ class StudentPage extends React.Component {
                     studentData={studentData}
                 />
                 <GraphComponent
-                    studentData={studentData}
+                    averageStudent={averageDataStudent}
+                    averageAll={averageDataAll}
                 />
             </div>
         )
