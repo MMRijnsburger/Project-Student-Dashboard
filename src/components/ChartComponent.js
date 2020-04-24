@@ -85,13 +85,13 @@ class ChartComponent extends React.Component {
                         // tickValues specifies both the number of ticks and where
                         // they are placed on the axis
                         tickFormat={this.props.studentData.assigment}
-                        style={{ tickLabels: { angle: 45, textAnchor: 'start', fontSize: 6 } }}
+                        style={{ tickLabels: { angle: 45, textAnchor: 'start', fontSize: 6 }, ticks: { stroke: "grey", size: 5 } }}
                     />
                     <VictoryAxis
                         dependentAxis
                         // tickFormat specifies how ticks should be displayed
                         tickFormat={[1, 2, 3, 4, 5]}
-                        style={{ tickLabels: { fontSize: 10 } }}
+                        style={{ tickLabels: { fontSize: 10 }, ticks: { stroke: "grey", size: 5 } }}
                     />
                     <VictoryGroup offset={15} style={{ data: { width: 10 } }}>
                         {renderDifficultBar(this.state.showDifficult)}
