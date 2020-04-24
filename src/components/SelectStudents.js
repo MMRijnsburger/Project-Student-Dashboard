@@ -14,8 +14,7 @@ const SelectStudents = (props) => {
     })
     return (
         <div className="SelectStudents">
-            <h2>SelectStudents component</h2>
-            <h3>en InputSelect component</h3>
+            <p>Filter op naam van een student:</p>
             {inputSelects}
         </div>
     )
