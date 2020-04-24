@@ -60,7 +60,6 @@ class ChartComponent extends React.Component {
 
         return (
             <div className="ChartComponent">
-                <h2>InputSelect component</h2>
                 <div className="InputSelect">
                     <InputSelect
                         selectName={'difficult'}
@@ -75,7 +74,6 @@ class ChartComponent extends React.Component {
                     />
                 </div>
 
-                <h2>ChartComponent</h2>
                 <VictoryChart
                     domainPadding={{ x: 15 }}
                     className="VictoryChart-BarChart"

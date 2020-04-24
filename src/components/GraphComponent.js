@@ -12,7 +12,6 @@ class GraphComponent extends React.Component {
         // console.log(this.props.averageAll)
         return (
             <div className="GraphComponent">
-                <h2>GraphComponent</h2>
                 <VictoryChart>
                     <VictoryAxis
                         // tickValues specifies both the number of ticks and where
