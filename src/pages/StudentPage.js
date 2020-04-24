@@ -21,6 +21,20 @@ class StudentPage extends React.Component {
         })
         return /*Math.round(*/average / items/*)*/
     }
+
+    calculateAverageForOneStudent(studentData) {
+        const averageData = studentData.map(studentItem => {
+            const average = ((studentItem.difficult + studentItem.fun) / 2)
+            return {
+                id: studentItem.id,
+                name: studentItem.name,
+                assignment: studentItem.assignment,
+                average: average,
+            }
+        })
+        return averageData
+    }
+
     render() {
         // console.log('name', this.state.studentName)
         const studentData = this.props.studentData.filter(item => {
