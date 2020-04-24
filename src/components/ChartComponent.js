@@ -37,6 +37,7 @@ class ChartComponent extends React.Component {
                 return (
                     <VictoryBar
                         colorScale={"red"}
+                        alignment="middle"
                         data={this.props.studentData}
                         x="assignment"
                         y="difficult"
@@ -50,6 +51,7 @@ class ChartComponent extends React.Component {
                 return (
                     <VictoryBar
                         colorScale={"blue"}
+                        alignment="end"
                         data={this.props.studentData}
                         x="assignment"
                         y="fun"
@@ -77,12 +79,13 @@ class ChartComponent extends React.Component {
                 <VictoryChart
                     domainPadding={{ x: 15 }}
                     className="VictoryChart-BarChart"
+                    padding={{ left: 30, top: 10, right: 30, bottom: 100 }}
                 >
                     <VictoryAxis
                         // tickValues specifies both the number of ticks and where
                         // they are placed on the axis
                         tickFormat={this.props.studentData.assigment}
-                        style={{ tickLabels: { angle: 90, textAnchor: 'start', fontSize: 6 } }}
+                        style={{ tickLabels: { angle: 45, textAnchor: 'start', fontSize: 6 } }}
                     />
                     <VictoryAxis
                         dependentAxis
