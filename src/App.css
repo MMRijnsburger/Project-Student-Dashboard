@@ -88,6 +88,11 @@
   /* width: 80%; */
 }
 
+.SelectStudents p {
+  margin: 0;
+  padding-bottom: 5px;
+}
+
 /* STUDENTS - StudentsPage styling */
 
 .StudentsPage {
