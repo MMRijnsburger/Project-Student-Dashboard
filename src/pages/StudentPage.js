@@ -10,6 +10,17 @@ class StudentPage extends React.Component {
         }
     }
 
+    calculateAverageAssignment(studentData, assignment) {
+        let average = 0;
+        let items = 0;
+        studentData.forEach(item => {
+            if (item.assignment === assignment) {
+                average += ((item.difficult + item.fun) / 2)
+                items++;
+            }
+        })
+        return /*Math.round(*/average / items/*)*/
+    }
     render() {
         // console.log('name', this.state.studentName)
         const studentData = this.props.studentData.filter(item => {
