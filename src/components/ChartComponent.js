@@ -77,23 +77,29 @@ class ChartComponent extends React.Component {
                 </div>
 
                 <VictoryChart
-                    domainPadding={{ x: 15 }}
+                    domainPadding={{ x: 17 }}
                     className="VictoryChart-BarChart"
-                    padding={{ left: 30, top: 10, right: 30, bottom: 100 }}
+                    padding={{ left: 30, top: 30, right: 30, bottom: 100 }}
                 >
                     <VictoryAxis
                         // tickValues specifies both the number of ticks and where
                         // they are placed on the axis
                         tickFormat={this.props.studentData.assigment}
-                        style={{ tickLabels: { angle: 45, textAnchor: 'start', fontSize: 6 }, ticks: { stroke: "grey", size: 5 } }}
+                        style={{
+                            tickLabels: { angle: 45, textAnchor: 'start', fontSize: 6 },
+                            ticks: { stroke: "grey", size: 5 }
+                        }}
                     />
                     <VictoryAxis
                         dependentAxis
                         // tickFormat specifies how ticks should be displayed
                         tickFormat={[1, 2, 3, 4, 5]}
-                        style={{ tickLabels: { fontSize: 10 }, ticks: { stroke: "grey", size: 5 } }}
+                        style={{
+                            tickLabels: { fontSize: 10 },
+                            ticks: { stroke: "grey", size: 5 }
+                        }}
                     />
-                    <VictoryGroup offset={15} style={{ data: { width: 10 } }}>
+                    <VictoryGroup offset={13} style={{ data: { width: 8 } }}>
                         {renderDifficultBar(this.state.showDifficult)}
                         {renderFunBar(this.state.showFun)}
                     </VictoryGroup>
