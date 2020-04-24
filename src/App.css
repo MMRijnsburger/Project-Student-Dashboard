@@ -49,6 +49,13 @@
   padding: 15px;
 }
 
+.OverviewPage h1 {
+  font-family: 'Lato', sans-serif;
+  text-align: left;
+  padding-left: 50px;
+  margin: 0;
+}
+
 .ChartComponent {
   margin-bottom: 20px;
   /* padding: 15px; */
@@ -69,22 +76,44 @@
   margin-right: 5px;
 }
 
-/* StudentsPage styling */
+/* SelectStudents styling */
+
+.SelectStudents {
+  font-family: 'Lato', sans-serif;
+  padding: 15px;
+  background-color: #E6EDF3;
+  border: 1px solid rgb(221, 221, 221);
+  border-radius: 5px;
+  margin: 50px;
+  /* width: 80%; */
+}
+
+/* STUDENTS - StudentsPage styling */
 
 .StudentsPage {
   font-family: 'Lato', sans-serif;
   padding: 15px;
 }
 
-/* StudentPage styling */
+.StudentsPage h1 {
+  font-family: 'Lato', sans-serif;
+  text-align: left;
+  padding-left: 50px;
+  margin-top: 0;
+}
+
+/* STUDENT - StudentPage styling */
 
 .StudentPage {
   font-family: 'Lato', sans-serif;
+  padding: 15px;
 }
 
-h1 {
+.StudentPage h1 {
   font-family: 'Lato', sans-serif;
-  text-align: center;
+  text-align: left;
+  padding-left: 50px;
+  margin-top: 0;
 }
 
 .GraphComponent {
@@ -102,16 +131,4 @@ h1 {
   padding: 15px;
   background-color: #E6EDF3;
   border-radius: 0px 0px 5px 5px;
-}
-
-/* SelectStudents styling */
-
-.SelectStudents {
-  font-family: 'Lato', sans-serif;
-  padding: 15px;
-  background-color: #E6EDF3;
-  border: 1px solid rgb(221, 221, 221);
-  border-radius: 5px;
-  margin: 50px;
-  /* width: 80%; */
 }
