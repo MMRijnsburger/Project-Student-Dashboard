@@ -12,12 +12,14 @@ class GraphComponent extends React.Component {
         // console.log(this.props.averageAll)
         return (
             <div className="GraphComponent">
-                <VictoryChart>
+                <VictoryChart
+                    padding={{ left: 30, top: 10, right: 50, bottom: 100 }}
+                >
                     <VictoryAxis
                         // tickValues specifies both the number of ticks and where
                         // they are placed on the axis
                         tickFormat={this.props.averageStudent.assigment}
-                        style={{ tickLabels: { angle: 90, textAnchor: 'start', fontSize: 6 } }}
+                        style={{ tickLabels: { angle: 45, textAnchor: 'start', fontSize: 6 } }}
                     />
                     <VictoryAxis
                         dependentAxis
