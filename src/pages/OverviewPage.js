@@ -103,12 +103,12 @@ class OverviewPage extends React.Component {
         return (
             <div className="OverviewPage">
                 <h1>Dashboard Overview</h1>
-                <ChartComponent
-                    studentData={averageStudentData}
-                />
                 <SelectStudents
                     students={this.props.students}
                     studentsChange={this.handleStudentsChange}
+                />
+                <ChartComponent
+                    studentData={averageStudentData}
                 />
             </div>
         )
