@@ -61,6 +61,8 @@
 .InputSelect {
   padding: 15px;
   background-color: #E6EDF3;
+  border-radius: 0px 5px 5px 0px;
+  width: 40%;
 }
 
 .InputSelectLabel {
