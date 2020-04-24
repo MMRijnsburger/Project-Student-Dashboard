@@ -6,16 +6,20 @@ class GraphComponent extends React.Component {
         super(props)
         this.state = {}
     }
+
     render() {
-        console.log(this.props.studentData)
+        // console.log(this.props.averageStudent)
+        // console.log(this.props.averageAll)
         return (
             <div className="GraphComponent">
                 <h2>GraphComponent</h2>
+                <h3>Gemiddeld cijfer van een opdracht over alle studenten (blauw)</h3>
+                <h3>Gemiddeld cijfer van deze student voor alle opdrachten (zalmroze)</h3>
                 <VictoryChart>
                     <VictoryAxis
                         // tickValues specifies both the number of ticks and where
                         // they are placed on the axis
-                        tickFormat={this.props.studentData.assigment}
+                        tickFormat={this.props.averageStudent.assigment}
                         style={{ tickLabels: { angle: 90, textAnchor: 'start', fontSize: 6 } }}
                     />
                     <VictoryAxis
