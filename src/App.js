@@ -6,8 +6,9 @@ import {
   Link
 } from "react-router-dom";
 import './App.css';
-import Container from './Container';
-import StudentPage from './StudentPage';
+import OverviewPage from './pages/OverviewPage';
+import StudentsPage from './pages/StudentsPage';
+import StudentPage from './pages/StudentPage';
 import StudentData from './data/StudentData';
 
 const filterOnWeek = (studentData, filter) => {
@@ -51,10 +52,10 @@ function App() {
             render={(props) => <StudentPage {...props} studentData={studentData} />}
           />
           <Route path="/Students/">
-            {/* <StudentsPage students={students} /> */}
+            <StudentsPage students={students} />
           </Route>
           <Route path="/">
-            <Container
+            <OverviewPage
               studentData={studentData}
               students={students}
             />

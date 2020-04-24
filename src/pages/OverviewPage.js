@@ -1,8 +1,8 @@
 import React from 'react';
-import ChartComponent from './components/ChartComponent';
-import SelectStudents from './components/SelectStudents';
+import ChartComponent from '../components/ChartComponent';
+import SelectStudents from '../components/SelectStudents';
 
-class Container extends React.Component {
+class OverviewPage extends React.Component {
     constructor(props) {
         super(props)
 
@@ -115,4 +115,4 @@ class Container extends React.Component {
     }
 }
 
-export default Container;
+export default OverviewPage;

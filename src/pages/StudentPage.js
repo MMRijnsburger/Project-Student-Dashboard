@@ -1,5 +1,5 @@
 import React from 'react';
-import ChartComponent from './components/ChartComponent';
+import ChartComponent from '../components/ChartComponent';
 
 class StudentPage extends React.Component {
     constructor(props) {
