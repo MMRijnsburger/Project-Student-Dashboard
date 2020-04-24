@@ -110,7 +110,8 @@ h1 {
   font-family: 'Lato', sans-serif;
   padding: 15px;
   background-color: #E6EDF3;
+  border: 1px solid rgb(221, 221, 221);
   border-radius: 5px;
-  margin: auto;
-  width: 80%;
+  margin: 50px;
+  /* width: 80%; */
 }
