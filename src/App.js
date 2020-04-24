@@ -33,7 +33,8 @@ function App() {
   return (
     <Router>
       <header className="App-header">
-        <h1>Student Dashboard</h1>
+        <h1>Student</h1>
+        <h2>Dashboard</h2>
       </header>
       <nav className="navigation">
         <ul>
