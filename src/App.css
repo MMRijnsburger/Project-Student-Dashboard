@@ -102,6 +102,32 @@
   margin-top: 0;
 }
 
+.ListBlock {
+  width: 400px;
+}
+
+.StudentsPageList ul {
+  list-style: inline-block;
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.StudentsPageList li {
+  display: inline-block;
+  background-color: #E6EDF3;
+  width: 40%;
+  padding: 10px;
+  margin: 2px;
+  border: 1px solid rgb(221, 221, 221);
+  border-radius: 2px;
+}
+
+.StudentsPageList a {
+  color: black;
+  text-decoration: none;
+}
+
 /* STUDENT - StudentPage styling */
 
 .StudentPage {

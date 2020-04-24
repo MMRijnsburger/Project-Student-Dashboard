@@ -13,9 +13,11 @@ const StudentsPage = (props) => {
     return (
         <div className="StudentsPage">
             <h1>Students</h1>
-            <ul>
-                {studentLinks}
-            </ul>
+            <div className="ListBlock">
+                <ul className="StudentsPageList">
+                    {studentLinks}
+                </ul>
+            </div>
         </div>
     )
 }
