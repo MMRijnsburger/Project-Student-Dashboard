@@ -13,8 +13,6 @@ class GraphComponent extends React.Component {
         return (
             <div className="GraphComponent">
                 <h2>GraphComponent</h2>
-                <h3>Gemiddeld cijfer van een opdracht over alle studenten (blauw)</h3>
-                <h3>Gemiddeld cijfer van deze student voor alle opdrachten (zalmroze)</h3>
                 <VictoryChart>
                     <VictoryAxis
                         // tickValues specifies both the number of ticks and where
@@ -47,6 +45,12 @@ class GraphComponent extends React.Component {
                         y="average"
                     />
                 </VictoryChart>
+                <div className="ComponentInfo">
+                    <p>
+                        Gemiddeld cijfer van een opdracht over alle studenten (blauw)<br />
+                        Gemiddeld cijfer van deze student voor alle opdrachten (zalmroze)
+                    </p>
+                </div>
             </div>
         )
     }

@@ -97,6 +97,12 @@ class ChartComponent extends React.Component {
                         {renderFunBar(this.state.showFun)}
                     </VictoryGroup>
                 </VictoryChart>
+                <div className="ComponentInfo">
+                    <p>
+                        Hoe leuk was de opdracht (blauw)<br />
+                        Hoe moeilijk was de opdracht (zalmroze)
+                    </p>
+                </div>
             </div>
         )
     }
