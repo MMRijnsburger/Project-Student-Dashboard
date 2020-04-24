@@ -51,16 +51,16 @@
 
 .ChartComponent {
   margin-bottom: 20px;
-  padding: 15px;
+  /* padding: 15px; */
+  border: 1px solid rgb(221, 221, 221);
+  border-radius: 5px;
+  margin: 50px;
+  justify-content: center;
 }
 
 .InputSelect {
   padding: 15px;
   background-color: #E6EDF3;
-  border-radius: 5px;
-  width: 30%;
-  position: absolute;
-  right: 130px;
 }
 
 .InputSelectLabel {
@@ -87,7 +87,19 @@ h1 {
 
 .GraphComponent {
   margin-bottom: 20px;
+  /* padding: 15px; */
+  border: 1px solid rgb(221, 221, 221);
+  border-radius: 5px;
+  margin: 50px;
+  justify-content: center;
+}
+
+/* Componenten Info styling */
+
+.ComponentInfo {
   padding: 15px;
+  background-color: #E6EDF3;
+  border-radius: 0px 0px 5px 5px;
 }
 
 /* SelectStudents styling */
