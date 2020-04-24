@@ -3,7 +3,7 @@
 /* App Header styling */
 
 .App-header {
-  background-color: #456B96;
+  background-color: #3F6C8E;
   font-family: 'Lato', sans-serif;
   min-height: 20vh;
   display: flex;
@@ -23,7 +23,7 @@
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #DCE5EF;
+  background-color: #86A8C1;
 }
 
 .navigation li {
@@ -39,12 +39,37 @@
 }
 
 .navigation li a:hover {
-  background-color: #456B96;
+  background-color: #3F6C8E;
 }
 
-/* ChartComponent styling */
+/* OverviewPage styling */
+
+.OverviewPage {
+  font-family: 'Lato', sans-serif;
+  padding: 15px;
+}
 
 .ChartComponent {
+  margin-bottom: 20px;
+  padding: 15px;
+}
+
+.InputSelect {
+  padding: 15px;
+  background-color: #E6EDF3;
+  border-radius: 5px;
+  width: 30%;
+  position: absolute;
+  right: 130px;
+}
+
+.InputSelectLabel {
+  margin-right: 5px;
+}
+
+/* StudentsPage styling */
+
+.StudentsPage {
   font-family: 'Lato', sans-serif;
   padding: 15px;
 }
@@ -65,4 +90,8 @@ h1 {
 .SelectStudents {
   font-family: 'Lato', sans-serif;
   padding: 15px;
+  background-color: #E6EDF3;
+  border-radius: 5px;
+  margin: auto;
+  width: 80%;
 }

@@ -101,8 +101,8 @@ class OverviewPage extends React.Component {
         const filteredStudentsData = this.filteredStudentsData(this.props.studentData)
         const averageStudentData = this.averageStudentData(filteredStudentsData)
         return (
-            <div className="Container">
-                <h1>Home</h1>
+            <div className="OverviewPage">
+                <h1>Home - Overview</h1>
                 <ChartComponent
                     studentData={averageStudentData}
                 />

@@ -60,23 +60,25 @@ class ChartComponent extends React.Component {
 
         return (
             <div className="ChartComponent">
-                <h2>InputSelect component (de checkboxes)</h2>
-                <InputSelect
-                    selectName={'difficult'}
-                    selectText={'Opdracht moeilijk (zalmroze)'}
-                    selectChange={this.handleFilterChange}
-                />
-                <br />
-                <InputSelect
-                    selectName={'fun'}
-                    selectText={'Opdracht leuk (blauw)'}
-                    selectChange={this.handleFilterChange}
-                />
+                <h2>InputSelect component</h2>
+                <div className="InputSelect">
+                    <InputSelect
+                        selectName={'difficult'}
+                        selectText={'Opdracht moeilijk (zalmroze)'}
+                        selectChange={this.handleFilterChange}
+                    />
+                    <br />
+                    <InputSelect
+                        selectName={'fun'}
+                        selectText={'Opdracht leuk (blauw)'}
+                        selectChange={this.handleFilterChange}
+                    />
+                </div>
 
                 <h2>ChartComponent</h2>
-                <p>Chart component is echt (met weinig data (1 persoon))</p>
                 <VictoryChart
                     domainPadding={{ x: 15 }}
+                    className="VictoryChart-BarChart"
                 >
                     <VictoryAxis
                         // tickValues specifies both the number of ticks and where

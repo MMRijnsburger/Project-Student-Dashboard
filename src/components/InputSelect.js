@@ -7,7 +7,7 @@ const InputSelect = (props) => {
         props.selectChange(props.selectName, event.target.checked)
     }
     return (
-        <label>
+        <label className="InputSelectLabel">
             <input
                 type="checkbox"
                 onClick={handleSelectChange}
