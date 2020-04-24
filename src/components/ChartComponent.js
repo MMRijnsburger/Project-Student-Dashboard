@@ -98,10 +98,8 @@ class ChartComponent extends React.Component {
                     </VictoryGroup>
                 </VictoryChart>
                 <div className="ComponentInfo">
-                    <p>
-                        Hoe leuk was de opdracht (blauw)<br />
-                        Hoe moeilijk was de opdracht (zalmroze)
-                    </p>
+                    <p className="fun">Hoe leuk was de opdracht</p>
+                    <p className="difficult">Hoe moeilijk was de opdracht</p>
                 </div>
             </div>
         )

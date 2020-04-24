@@ -46,12 +46,10 @@ class GraphComponent extends React.Component {
                     />
                 </VictoryChart>
                 <div className="ComponentInfo">
-                    <p>
-                        Gemiddeld cijfer van een opdracht over alle studenten (blauw)<br />
-                        Gemiddeld cijfer van deze student voor alle opdrachten (zalmroze)
-                    </p>
+                    <p className="averageAll">Gemiddeld cijfer van een opdracht over alle studenten</p>
+                    <p className="averageOneStudent">Gemiddeld cijfer van deze student voor alle opdrachten</p>
                 </div>
-            </div>
+            </div >
         )
     }
 }
