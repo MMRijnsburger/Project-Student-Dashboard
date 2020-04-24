@@ -1,5 +1,6 @@
 import React from 'react';
 import ChartComponent from '../components/ChartComponent';
+import GraphComponent from '../components/GraphComponent';
 
 class StudentPage extends React.Component {
     constructor(props) {
@@ -18,6 +19,9 @@ class StudentPage extends React.Component {
             <div className="StudentPage">
                 <h1>Student: {this.state.studentName}</h1>
                 <ChartComponent
+                    studentData={studentData}
+                />
+                <GraphComponent
                     studentData={studentData}
                 />
             </div>
