@@ -33,18 +33,18 @@ class GraphComponent extends React.Component {
                             data: { stroke: "#fbae94" },
                             parent: { border: "1px solid #ccc" }
                         }}
-                        data={this.props.studentData}
+                        data={this.props.averageStudent}
                         x="assignment"
-                        y="difficult"
+                        y="average"
                     />
                     <VictoryLine
                         style={{
                             data: { stroke: "#084d8d" },
                             parent: { border: "1px solid #ccc" }
                         }}
-                        data={this.props.studentData}
+                        data={this.props.averageAll}
                         x="assignment"
-                        y="fun"
+                        y="average"
                     />
                 </VictoryChart>
             </div>
