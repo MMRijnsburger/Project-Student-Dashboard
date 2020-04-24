@@ -26,12 +26,21 @@ class GraphComponent extends React.Component {
                     />
                     <VictoryLine
                         style={{
-                            data: { stroke: "#3F6C8E" },
+                            data: { stroke: "#fbae94" },
                             parent: { border: "1px solid #ccc" }
                         }}
                         data={this.props.studentData}
                         x="assignment"
                         y="difficult"
+                    />
+                    <VictoryLine
+                        style={{
+                            data: { stroke: "#084d8d" },
+                            parent: { border: "1px solid #ccc" }
+                        }}
+                        data={this.props.studentData}
+                        x="assignment"
+                        y="fun"
                     />
                 </VictoryChart>
             </div>
