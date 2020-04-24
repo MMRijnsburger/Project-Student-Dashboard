@@ -63,13 +63,13 @@ class ChartComponent extends React.Component {
                 <div className="InputSelect">
                     <InputSelect
                         selectName={'difficult'}
-                        selectText={'Opdracht moeilijk (zalmroze)'}
+                        selectText={' Hoe moeilijk was de opdracht?'}
                         selectChange={this.handleFilterChange}
                     />
                     <br />
                     <InputSelect
                         selectName={'fun'}
-                        selectText={'Opdracht leuk (blauw)'}
+                        selectText={' Hoe leuk was de opdracht?'}
                         selectChange={this.handleFilterChange}
                     />
                 </div>
