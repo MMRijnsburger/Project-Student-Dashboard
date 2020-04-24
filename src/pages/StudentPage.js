@@ -35,6 +35,27 @@ class StudentPage extends React.Component {
         return averageData
     }
 
+    calculateAverageForAllStudents(studentData) {
+        const averageStudentData = []
+        let filterItemId = 1
+        studentData.forEach(studentItem => {
+            const data = averageStudentData.find(filterItem => {
+                return studentItem.assignment === filterItem.assignment
+            })
+            if (data === undefined) {
+                const average = this.calculateAverageAssignment(studentData, studentItem.assignment)
+                averageStudentData.push({
+                    id: filterItemId++,
+                    name: 'average',
+                    assignment: studentItem.assignment,
+                    average: average,
+                })
+            }
+        })
+        // console.log(filteredData)
+        return averageStudentData
+    }
+
     render() {
         // console.log('name', this.state.studentName)
         const studentData = this.props.studentData.filter(item => {
