@@ -3,9 +3,12 @@ Winc Academy Eindproject - Week 6: Student Dashboard
 
 ![Screenshot](./images/Screenshot.png)
 
-Als eindopdracht heb ik een "real life" project gemaakt. Een project waarvan het eindresultaat dus ook echt voor Winc Academy
- gebruikt kan gaan worden: namelijk een Student Dashboard!
- 
+Bekijk de live versie van de Student Dashboard: https://studentdashboard.netlify.app/
+
+Als eindopdracht heb ik een "real life" project gemaakt. Een project waarvan het eindresultaat dus ook echt voor Winc Academy gebruikt kan gaan worden: namelijk een Student Dashboard!
+
+## De Opdracht ##
+
 ***Doel***: het gemakkelijk maken voor Winc docenten om in één overzicht te zien hoe de studenten de opdrachten evalueren
 
 ***Wat is de huidige situatie***: Excellen, Excellen, Excellen..... 
@@ -14,7 +17,7 @@ Als eindopdracht heb ik een "real life" project gemaakt. Een project waarvan het
 
 ***Tools:*** Maak gebruik van een JavaScript framework zoals React.
 
-## De Opdracht ##
+### Data ###
 
 Er wordt gewerkt met mock data (met nep studenten). De data bevat opdracht-evaluaties die de studenten hebben ingevuld. 
 
@@ -27,7 +30,7 @@ Deze data heeft de volgende structuur:
 
 Het is aan jullie om de data correct te modelleren en te structuren.
 
-## 📊 Requirements
+## Requirements
 
 Jouw WebApplicatie **moet het volgende weergeven**
 
